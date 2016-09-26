@@ -229,4 +229,14 @@ public enum Nord {
   public Color get() {
     return COLOR;
   }
+
+  /**
+   * Returns the <a href="https://github.com/arcticicestudio/arcver">ArcVer</a> version of the public API.
+   *
+   * @return the ArcVer version string
+   * @see <a href="http://semver.org">SemVer</a>
+   */
+  public String getVersion() {
+    return "0.0.0";
+  }
 }
