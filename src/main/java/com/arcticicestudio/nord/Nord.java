@@ -220,4 +220,13 @@ public enum Nord {
 
     return String.join("", "rgb(", intRed, ", ", intGreen, ", ", intBlue, ")");
   }
+
+  /**
+   * Returns the color object.
+   *
+   * @return the color object
+   */
+  public Color get() {
+    return COLOR;
+  }
 }
