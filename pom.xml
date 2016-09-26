@@ -3,7 +3,7 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      POM                                          +
 project    nord-java                                    +
-version    0.0.0                                        +
+version    0.1.0                                        +
 repository https://github.com/arcticicestudio/nord-java +
 author     Arctic Ice Studio                            +
 email      development@arcticicestudio.com              +
@@ -28,7 +28,7 @@ JFrog Bintray
 
   <groupId>com.arcticicestudio</groupId>
   <artifactId>nord-java</artifactId>
-  <version>0.0.0</version>
+  <version>0.1.0</version>
   <packaging>jar</packaging>
 
   <name>nord-java</name>
@@ -212,9 +212,26 @@ JFrog Bintray
           <classifier>javadoc</classifier>
           <encoding>${project.build.sourceEncoding}</encoding>
           <author>true</author>
-          <bottom>Copyright &#169; {inceptionYear} {organizationName}</bottom>
+          <bottom>Copyright &#169; ${inceptionYear} {organizationName}</bottom>
           <doctitle>${project.name} ${project.version} API</doctitle>
           <windowtitle>${project.name} ${project.version} API</windowtitle>
+          <tags>
+            <tag>
+              <name>apiNote</name>
+              <placement>a</placement>
+              <head>API Note:</head>
+            </tag>
+            <tag>
+              <name>implSpec</name>
+              <placement>a</placement>
+              <head>Implementation Specification:</head>
+            </tag>
+            <tag>
+              <name>implNote</name>
+              <placement>a</placement>
+              <head>Implementation Note:</head>
+            </tag>
+          </tags>
         </configuration>
       </plugin>
 
