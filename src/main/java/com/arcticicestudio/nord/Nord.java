@@ -193,12 +193,31 @@ public enum Nord {
   }
 
   /**
-   * Converts the {@code color} to the {@code HEX} identifier.
+   * Converts the {@code color} to the HEX identifier.
    *
    * @param color the color object
-   * @return the string representation of the {@code HEX} identifier
+   * @return the string representation of the HEX identifier
    */
   public static String hex(final Color color) {
     return COLOR_PREFIX.matcher(color.toString()).replaceAll("#").substring(0, 7).toUpperCase();
+  }
+
+  /**
+   * Converts the {@code color} to the RGB identifier.
+   *
+   * @param color the color object
+   * @return the string representation of the RGB identifier
+   */
+  public static String rgb(final Color color) {
+    String hex = COLOR_PREFIX.matcher(color.toString()).replaceAll("");
+    String hexRed = hex.substring(0, 2).toUpperCase();
+    String hexGreen = hex.substring(2, 4).toUpperCase();
+    String hexBlue = hex.substring(4, 6).toUpperCase();
+
+    String intRed = Integer.toString(Integer.parseInt(hexRed, 16));
+    String intGreen = Integer.toString(Integer.parseInt(hexGreen, 16));
+    String intBlue = Integer.toString(Integer.parseInt(hexBlue, 16));
+
+    return String.join("", "rgb(", intRed, ", ", intGreen, ", ", intBlue, ")");
   }
 }
