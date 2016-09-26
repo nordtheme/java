@@ -2,7 +2,7 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      Nord API                                     +
 project    nord-java                                    +
-version    0.0.0                                        +
+version    0.1.0                                        +
 repository https://github.com/arcticicestudio/nord-java +
 author     Arctic Ice Studio                            +
 email      development@arcticicestudio.com              +
@@ -55,7 +55,7 @@ import java.util.regex.Pattern;
  * </div>
  *
  * @author Arctic Ice Studio &lt;development@arcticicestudio.com&gt;
- * @version 0.0.0
+ * @version 0.1.0
  * @since 0.1.0
  */
 public enum Nord {
@@ -237,6 +237,6 @@ public enum Nord {
    * @see <a href="http://semver.org">SemVer</a>
    */
   public String getVersion() {
-    return "0.0.0";
+    return "0.1.0";
   }
 }
