@@ -215,6 +215,23 @@ JFrog Bintray
           <bottom>Copyright &#169; {inceptionYear} {organizationName}</bottom>
           <doctitle>${project.name} ${project.version} API</doctitle>
           <windowtitle>${project.name} ${project.version} API</windowtitle>
+          <tags>
+            <tag>
+              <name>apiNote</name>
+              <placement>a</placement>
+              <head>API Note:</head>
+            </tag>
+            <tag>
+              <name>implSpec</name>
+              <placement>a</placement>
+              <head>Implementation Specification:</head>
+            </tag>
+            <tag>
+              <name>implNote</name>
+              <placement>a</placement>
+              <head>Implementation Note:</head>
+            </tag>
+          </tags>
         </configuration>
       </plugin>
 
