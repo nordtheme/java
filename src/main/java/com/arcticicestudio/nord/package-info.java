@@ -2,7 +2,7 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      Nord API Package Info                        +
 project    nord-java                                    +
-version    0.0.0                                        +
+version    0.1.0                                        +
 repository https://github.com/arcticicestudio/nord-java +
 author     Arctic Ice Studio                            +
 email      development@arcticicestudio.com              +
@@ -20,7 +20,7 @@ copyright  Copyright (C) 2016                           +
  * @author Arctic Ice Studio &lt;development@arcticicestudio.com&gt;
  * @see <a href="https://github.com/arcticicestudio/nord-java">Nord - Java </a>
  * @see <a href="https://github.com/arcticicestudio/nord">Nord</a>
- * @version 0.0.0
+ * @version 0.1.0
  * @since 0.1.0
  */
 package com.arcticicestudio.nord;

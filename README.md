@@ -17,18 +17,18 @@ You can get it from the <img src="http://central.sonatype.org/favicon.ico" width
 <dependency>
   <groupId>com.arcticicestudio</groupId>
   <artifactId>nord-java</artifactId>
-  <version></version>
+  <version>0.1.0</version>
 </dependency>
 ```
 
 <img src="https://gradle.org/wp-content/uploads/fbrfg/favicon.ico" width=16 height=16/> <a href="https://gradle.org">Gradle</a>
 ```java
-compile(group: 'com.arcticicestudio', name: 'nord-java', version: '')
+compile(group: 'com.arcticicestudio', name: 'nord-java', version: '0.1.0')
 ```
 
 <img src="http://apache.org/favicons/favicon.ico" width=16 height=16/> <a href="https://ant.apache.org/ivy">Apache Ivy</a>
 ```xml
-<dependency org="com.arcticicestudio" name="nord-java" rev="" />
+<dependency org="com.arcticicestudio" name="nord-java" rev="0.1.0" />
 ```
 
 Development snapshots are available via [OSS Sonatype](https://oss.sonatype.org/content/repositories/snapshots/com/arcticicestudio/nord-java).  
@@ -69,7 +69,7 @@ String version = Nord.NORD0.getVersion(); // "0.1.0"
 ```
 
 ## Development
-[![](https://img.shields.io/badge/Changelog-0.0.0-blue.svg)](https://github.com/arcticicestudio/nord-java/blob/develop/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow_Branching_Model-blue.svg)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-blue.svg)](https://github.com/arcticicestudio/arcver)
+[![](https://img.shields.io/badge/Changelog-0.1.0-blue.svg)](https://github.com/arcticicestudio/nord-java/blob/v0.1.0/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow_Branching_Model-blue.svg)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-blue.svg)](https://github.com/arcticicestudio/arcver)
 
 ### Contribution
 Please report issues/bugs, feature requests and suggestions for improvements to the [issue tracker](https://github.com/arcticicestudio/nord-java/issues).

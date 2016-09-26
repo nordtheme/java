@@ -2,7 +2,7 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      Nord API Unit Test                           +
 project    nord-java                                    +
-version    0.0.0                                        +
+version    0.1.0                                        +
 repository https://github.com/arcticicestudio/nord-java +
 author     Arctic Ice Studio                            +
 email      development@arcticicestudio.com              +
