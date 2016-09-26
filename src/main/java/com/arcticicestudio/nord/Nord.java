@@ -191,4 +191,14 @@ public enum Nord {
   Nord(final int red, final int green, final int blue) {
     COLOR = Color.rgb(red, green, blue);
   }
+
+  /**
+   * Converts the {@code color} to the {@code HEX} identifier.
+   *
+   * @param color the color object
+   * @return the string representation of the {@code HEX} identifier
+   */
+  public static String hex(final Color color) {
+    return COLOR_PREFIX.matcher(color.toString()).replaceAll("#").substring(0, 7).toUpperCase();
+  }
 }
