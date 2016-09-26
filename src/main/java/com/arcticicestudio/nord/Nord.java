@@ -11,6 +11,10 @@ copyright  Copyright (C) 2016                           +
 */
 package com.arcticicestudio.nord;
 
+import javafx.scene.paint.Color;
+
+import java.util.regex.Pattern;
+
 /**
  * Public API entry point of the <a href="https://github.com/arcticicestudio/nord-java">Nord - Java</a> project, which
  * implements the <a href="https://github.com/arcticicestudio/nord">Nord</a> color palette.
@@ -166,4 +170,25 @@ public enum Nord {
    * <div style="border:none;width:25px;height:30px;background-color:rgb(180,142,173);margin: 0"></div>
    */
   NORD15(180, 142, 173);
+
+  /**
+   * Compiled pattern to convert the RGB and HEX color values.
+   */
+  private static final Pattern COLOR_PREFIX = Pattern.compile("0x", Pattern.LITERAL);
+
+  /**
+   * Contains the RGB color code.
+   */
+  private final Color COLOR;
+
+  /**
+   * Constructs a new color object.
+   *
+   * @param red the value for the additive primary color {@code red}
+   * @param green the value for the additive primary color {@code green}
+   * @param blue the value for the additive primary color {@code blue}
+   */
+  Nord(final int red, final int green, final int blue) {
+    COLOR = Color.rgb(red, green, blue);
+  }
 }
