@@ -46,6 +46,28 @@ mvn clean install -Dgpg.keyname=YourGPGKeyId
 
 A continuous integration build is running at [Travis-CI](https://travis-ci.org/arcticicestudio/nord-java).
 
+## Usage Guide
+This is a basic guide to show the common usage of the nord-java API.  
+The API documentation can be found in the JavaDoc.
+
+The class `Nord` is the entrypoint to the nord-java API, use it to generate the HEX and RGB color codes.
+  - [Generate color code strings](#generate-color-code-strings)
+  - [Obtaining the Public API version](#obtaining-the-public-api-version)
+
+### Generate color code strings
+You can generate color code strings from all `Nord` enum variables by using the with the static methods `hex(Color)` and `rgb(Color)`.  
+The `Color` object can be obtained from a `Nord` enum variable via the `get()` method.  
+```java
+String hex = Nord.hex(Nord.NORD0.get()); // ""#2E3440"
+String rgb = Nord.rgb(Nord.NORD8.get()); // "rgb(136, 192, 208)""
+```
+
+### Obtaining the Public API version
+The method `getVersion()` returns the version of the public API as string.  
+```java
+String version = Nord.NORD0.getVersion(); // "0.1.0"
+```
+
 ## Development
 [![](https://img.shields.io/badge/Changelog-0.0.0-blue.svg)](https://github.com/arcticicestudio/nord-java/blob/develop/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow_Branching_Model-blue.svg)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-blue.svg)](https://github.com/arcticicestudio/arcver)
 
