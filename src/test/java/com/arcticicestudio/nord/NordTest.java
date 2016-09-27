@@ -62,4 +62,9 @@ public class NordTest {
     assertEquals(Nord.rgb(Nord.NORD14.get()), "rgb(163, 190, 140)");
     assertEquals(Nord.rgb(Nord.NORD15.get()), "rgb(180, 142, 173)");
   }
+
+  @Test
+  public void shouldReturnTheCorrectVersionString() {
+    assertEquals(Nord.NORD0.getVersion(), "0.1.0");
+  }
 }
