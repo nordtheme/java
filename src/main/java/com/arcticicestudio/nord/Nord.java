@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
  * implements the <a href="https://github.com/arcticicestudio/nord">Nord</a> color palette.
  *
  * <div>
- *   <table >
+ *   <table summary="Nord Color Palette">
  *     <tbody>
  *       <tr>
  *         <th style="border:0;">Polar Night</th>
