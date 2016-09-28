@@ -212,7 +212,7 @@ JFrog Bintray
           <classifier>javadoc</classifier>
           <encoding>${project.build.sourceEncoding}</encoding>
           <author>true</author>
-          <bottom>Copyright &#169; ${inceptionYear} {organizationName}</bottom>
+          <bottom>Copyright &#169; ${project.inceptionYear} {organizationName}</bottom>
           <doctitle>${project.name} ${project.version} API</doctitle>
           <windowtitle>${project.name} ${project.version} API</windowtitle>
           <tags>
