@@ -353,7 +353,7 @@ JFrog Bintray
     </profile>
 
     <profile>
-      <id>bintray</id>
+      <id>jfrog</id>
       <distributionManagement>
         <downloadUrl>https://github.com/arcticicestudio/nord-java</downloadUrl>
           <snapshotRepository>
