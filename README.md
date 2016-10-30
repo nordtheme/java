@@ -1,9 +1,9 @@
 <p align="center"><img src="https://cdn.rawgit.com/arcticicestudio/nord-java/develop/src/main/assets/nord-java-banner.svg"/></p>
 
-<p align="center"><img src="https://cdn.travis-ci.org/images/favicon-c566132d45ab1a9bcae64d8d90e4378a.svg" width=24 height=24/> <a href="https://travis-ci.org/arcticicestudio/nord-java"><img src="https://img.shields.io/travis/arcticicestudio/nord-java/develop.svg"/></a> <img src="https://codecov.io/favicon.ico" width=24 height=24/> <a href="https://codecov.io/gh/arcticicestudio/nord-java"><img src="https://codecov.io/gh/arcticicestudio/nord-java/branch/develop/graph/badge.svg"/></a> <img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> <a href="https://github.com/arcticicestudio/nord-java/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-java.svg"/></a> <a href="https://github.com/arcticicestudio/nord/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/Nord-0.2.0-blue.svg"/></a> <img src="http://central.sonatype.org/favicon.ico" width=24 height=24/> <a href="http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.arcticicestudio%22%20AND%20a%3A%22nord-java%22"><img src="https://img.shields.io/maven-central/v/com.arcticicestudio/nord-java.svg"/></a> <img src="https://oss.sonatype.org/favicon.ico"/> <a href="https://oss.sonatype.org/content/repositories/snapshots/com/arcticicestudio/nord-java"><img src="https://img.shields.io/badge/snapshot----blue.svg"/></a></p>
+<p align="center"><img src="https://cdn.travis-ci.org/images/favicon-c566132d45ab1a9bcae64d8d90e4378a.svg" width=24 height=24/> <a href="https://travis-ci.org/arcticicestudio/nord-java"><img src="https://img.shields.io/travis/arcticicestudio/nord-java/develop.svg"/></a> <img src="https://circleci.com/favicon.ico" width=24 height=24/> <a href="https://circleci.com/gh/arcticicestudio/nord-java"><img src="https://circleci.com/gh/arcticicestudio/nord-java.svg?style=shield&circle-token=d2d78e04b95f505e0c6a870913f96ee9912bb4c0"/></a> <img src="https://codecov.io/favicon.ico" width=24 height=24/> <a href="https://codecov.io/gh/arcticicestudio/nord-java"><img src="https://codecov.io/gh/arcticicestudio/nord-java/branch/develop/graph/badge.svg"/></a> <img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> <a href="https://github.com/arcticicestudio/nord-java/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-java.svg"/></a> <a href="https://github.com/arcticicestudio/nord/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/Nord-0.2.0-blue.svg"/></a> <img src="http://central.sonatype.org/favicon.ico" width=24 height=24/> <a href="http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.arcticicestudio%22%20AND%20a%3A%22nord-java%22"><img src="https://img.shields.io/maven-central/v/com.arcticicestudio/nord-java.svg"/></a> <img src="https://oss.sonatype.org/favicon.ico"/> <a href="https://oss.sonatype.org/content/repositories/snapshots/com/arcticicestudio/nord-java"><img src="https://img.shields.io/badge/snapshot----blue.svg"/></a></p>
 
 <p align="center">A arctic, north-bluish color palette Java library.<br>
-Official implementation of <a href="https://github.com/arcticicestudio/nord">Nord</a>.</p>
+Implementation of the <a href="https://github.com/arcticicestudio/nord">Nord</a> project.</p>
 
 ---
 
@@ -44,7 +44,7 @@ Signed artifacts may be build by using the `sign-gpg` profile with a provided `g
 mvn clean install -Dgpg.keyname=YourGPGKeyId
 ```
 
-A continuous integration build is running at [Travis-CI](https://travis-ci.org/arcticicestudio/nord-java).
+Continuous integration builds are running at [Travis-CI](https://travis-ci.org/arcticicestudio/nord-java) and [Circle CI](https://circleci.com/bb/arcticicestudio/nord-java).
 
 ## Usage Guide
 This is a basic guide to show the common usage of the nord-java API.  
