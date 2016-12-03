@@ -16,7 +16,7 @@ copyright  Copyright (C) 2016                           +
  *   The public API entry point is the {@link com.arcticicestudio.nord.Nord} enum.
  *
  * @author Arctic Ice Studio &lt;development@arcticicestudio.com&gt;
- * @version 0.1.0
+ * @version 0.2.0
  * @since 0.1.0
  */
 package com.arcticicestudio.nord;

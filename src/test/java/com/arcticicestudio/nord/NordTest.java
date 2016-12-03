@@ -66,6 +66,6 @@ public class NordTest {
 
   @Test
   public void shouldReturnTheCorrectVersionString() {
-    assertTrue(Version.valueOf(Nord.getVersion()).satisfies("0.1.0"));
+    assertTrue(Version.valueOf(Nord.getVersion()).satisfies("0.2.0"));
   }
 }
