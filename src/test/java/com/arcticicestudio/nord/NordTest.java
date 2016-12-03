@@ -10,9 +10,11 @@ copyright  Copyright (C) 2016                           +
 */
 package com.arcticicestudio.nord;
 
+import com.arcticicestudio.arcver.Version;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Unit tests for the {@link Nord} public API.
@@ -63,7 +65,7 @@ public class NordTest {
   }
 
   @Test
-  public void shouldReturnValidArcVerVersionString() {
-    assertEquals(Nord.NORD0.getVersion(), "0.1.0");
+  public void shouldReturnTheCorrectVersionString() {
+    assertTrue(Version.valueOf(Nord.getVersion()).satisfies("0.1.0"));
   }
 }

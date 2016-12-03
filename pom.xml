@@ -3,7 +3,6 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      POM                                          +
 project    nord-java                                    +
-version    0.1.0                                        +
 repository https://github.com/arcticicestudio/nord-java +
 author     Arctic Ice Studio                            +
 email      development@arcticicestudio.com              +
@@ -17,7 +16,7 @@ Apache Maven
   (https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html)
 Sonatype
   (http://books.sonatype.com/mvnref-book/reference)
-JFrog Bintray
+JFrog
   (https://bintray.com/docs/usermanual)
 -->
 <project
@@ -124,6 +123,13 @@ JFrog Bintray
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-library</artifactId>
       <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.arcticicestudio</groupId>
+      <artifactId>arcver-java</artifactId>
+      <version>0.11.0-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

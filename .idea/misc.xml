@@ -25,9 +25,6 @@
       <option name="addBlankAfter" value="false" />
     </LanguageOptions>
   </component>
-  <component name="EntryPointsManager">
-    <entry_points version="2.0" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
