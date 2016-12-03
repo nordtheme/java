@@ -3,7 +3,6 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      POM                                          +
 project    nord-java                                    +
-version    0.1.0                                        +
 repository https://github.com/arcticicestudio/nord-java +
 author     Arctic Ice Studio                            +
 email      development@arcticicestudio.com              +
@@ -17,7 +16,7 @@ Apache Maven
   (https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html)
 Sonatype
   (http://books.sonatype.com/mvnref-book/reference)
-JFrog Bintray
+JFrog
   (https://bintray.com/docs/usermanual)
 -->
 <project
@@ -28,7 +27,7 @@ JFrog Bintray
 
   <groupId>com.arcticicestudio</groupId>
   <artifactId>nord-java</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <packaging>jar</packaging>
 
   <name>nord-java</name>
@@ -88,6 +87,7 @@ JFrog Bintray
   </contributors>
 
   <properties>
+    <assembly.descriptor.bin>${basedir}/src/main/assets/assembly-bin.xml</assembly.descriptor.bin>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
   </properties>
@@ -103,22 +103,6 @@ JFrog Bintray
     <system>GitHub</system>
     <url>https://github.com/arcticicestudio/nord-java/issues</url>
   </issueManagement>
-
-  <distributionManagement>
-    <downloadUrl>https://github.com/arcticicestudio/nord-java</downloadUrl>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <name>OSS Sonatype</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-      <layout>default</layout>
-    </snapshotRepository>
-    <repository>
-      <id>ossrh</id>
-      <name>OSS Sonatype</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-      <layout>default</layout>
-    </repository>
-  </distributionManagement>
 
   <dependencies>
     <dependency>
@@ -139,6 +123,13 @@ JFrog Bintray
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-library</artifactId>
       <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.arcticicestudio</groupId>
+      <artifactId>arcver-java</artifactId>
+      <version>0.11.0-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -212,7 +203,7 @@ JFrog Bintray
           <classifier>javadoc</classifier>
           <encoding>${project.build.sourceEncoding}</encoding>
           <author>true</author>
-          <bottom>Copyright &#169; ${inceptionYear} {organizationName}</bottom>
+          <bottom>Copyright &#169; ${project.inceptionYear} {organizationName}</bottom>
           <doctitle>${project.name} ${project.version} API</doctitle>
           <windowtitle>${project.name} ${project.version} API</windowtitle>
           <tags>
@@ -273,18 +264,6 @@ JFrog Bintray
           <createChecksum>true</createChecksum>
         </configuration>
       </plugin>
-
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.7</version>
-        <extensions>true</extensions>
-        <configuration>
-          <serverId>ossrh</serverId>
-          <nexusUrl>https://oss.sonatype.org</nexusUrl>
-          <autoReleaseAfterClose>false</autoReleaseAfterClose>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
 
@@ -324,29 +303,28 @@ JFrog Bintray
 
   <profiles>
     <profile>
-      <id>sign-gpg</id>
-      <activation>
-        <property>
-          <name>gpg.keyname</name>
-        </property>
-      </activation>
+      <id>assemble</id>
       <build>
         <plugins>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.6</version>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <version>2.6</version>
             <executions>
               <execution>
-                <phase>verify</phase>
+                <id>assemble</id>
+                <phase>none</phase>
                 <goals>
-                  <goal>sign</goal>
+                  <goal>single</goal>
                 </goals>
               </execution>
             </executions>
             <configuration>
-              <ascDirectory>.</ascDirectory>
-              <keyname>${gpg.keyname}</keyname>
+              <appendAssemblyId>true</appendAssemblyId>
+              <recompressZippedFiles>false</recompressZippedFiles>
+              <descriptors>
+                <descriptor>${assembly.descriptor.bin}</descriptor>
+              </descriptors>
             </configuration>
           </plugin>
         </plugins>
@@ -381,14 +359,84 @@ JFrog Bintray
     </profile>
 
     <profile>
-      <id>bintray-deploy</id>
+      <id>jfrog</id>
       <distributionManagement>
+        <downloadUrl>https://github.com/arcticicestudio/nord-java</downloadUrl>
+          <snapshotRepository>
+            <id>bintray</id>
+            <name>OSS JFrog</name>
+            <url>http://oss.jfrog.org/artifactory/oss-snapshot-local</url>
+          </snapshotRepository>
         <repository>
            <id>bintray</id>
            <name>JFrog Bintray</name>
            <url>https://api.bintray.com/maven/arcticicestudio/Nord/nord-java/;publish=1</url>
         </repository>
       </distributionManagement>
+    </profile>
+
+    <profile>
+      <id>oss-sonatype</id>
+      <distributionManagement>
+        <downloadUrl>https://github.com/arcticicestudio/nord-java</downloadUrl>
+        <snapshotRepository>
+          <id>ossrh</id>
+          <name>OSS Sonatype</name>
+          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+          <layout>default</layout>
+        </snapshotRepository>
+        <repository>
+          <id>ossrh</id>
+          <name>OSS Sonatype</name>
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+          <layout>default</layout>
+        </repository>
+      </distributionManagement>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.7</version>
+            <extensions>true</extensions>
+            <configuration>
+              <serverId>ossrh</serverId>
+              <nexusUrl>https://oss.sonatype.org</nexusUrl>
+              <autoReleaseAfterClose>false</autoReleaseAfterClose>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
+    <profile>
+      <id>sign-gpg</id>
+      <activation>
+        <property>
+          <name>gpg.keyname</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.6</version>
+            <executions>
+              <execution>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <ascDirectory>.</ascDirectory>
+              <keyname>${gpg.keyname}</keyname>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
   </profiles>
 </project>

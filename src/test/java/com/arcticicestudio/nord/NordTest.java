@@ -2,7 +2,6 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      Nord API Unit Test                           +
 project    nord-java                                    +
-version    0.1.0                                        +
 repository https://github.com/arcticicestudio/nord-java +
 author     Arctic Ice Studio                            +
 email      development@arcticicestudio.com              +
@@ -11,20 +10,22 @@ copyright  Copyright (C) 2016                           +
 */
 package com.arcticicestudio.nord;
 
+import com.arcticicestudio.arcver.Version;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
- * Unit tests for the public API {@link Nord}.
+ * Unit tests for the {@link Nord} public API.
  *
  * @author Arctic Ice Studio &lt;development@arcticicestudio.com&gt;
- * @see Nord
  * @since 0.1.0
  */
 public class NordTest {
+
   @Test
-  public void shouldReturnTheCorrectHEXColorCode() {
+  public void shouldReturnHEXColorCode() {
     assertEquals(Nord.hex(Nord.NORD0.get()), "#2E3440");
     assertEquals(Nord.hex(Nord.NORD1.get()), "#3B4252");
     assertEquals(Nord.hex(Nord.NORD2.get()), "#434C5E");
@@ -61,5 +62,10 @@ public class NordTest {
     assertEquals(Nord.rgb(Nord.NORD13.get()), "rgb(235, 203, 139)");
     assertEquals(Nord.rgb(Nord.NORD14.get()), "rgb(163, 190, 140)");
     assertEquals(Nord.rgb(Nord.NORD15.get()), "rgb(180, 142, 173)");
+  }
+
+  @Test
+  public void shouldReturnTheCorrectVersionString() {
+    assertTrue(Version.valueOf(Nord.getVersion()).satisfies("0.2.0"));
   }
 }
