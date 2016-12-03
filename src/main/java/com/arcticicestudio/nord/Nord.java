@@ -199,7 +199,7 @@ public enum Nord {
   /**
    * The RGB color code.
    */
-  private final Color COLOR;
+  private final Color color;
 
   /**
    * The <a href="https://github.com/arcticicestudio/arcver">ArcVer</a> version of the public API.
@@ -214,7 +214,7 @@ public enum Nord {
    * @param blue the value for the additive primary color {@code blue}
    */
   Nord(final int red, final int green, final int blue) {
-    COLOR = Color.rgb(red, green, blue);
+    color = Color.rgb(red, green, blue);
   }
 
   /**
@@ -252,7 +252,7 @@ public enum Nord {
    * @return the color object
    */
   public Color get() {
-    return COLOR;
+    return color;
   }
 
   /**
