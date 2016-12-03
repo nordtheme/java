@@ -182,6 +182,11 @@ public enum Nord {
   private final Color COLOR;
 
   /**
+   * The <a href="https://github.com/arcticicestudio/arcver">ArcVer</a> version of the public API.
+   */
+  private static final String VERSION = "0.1.0";
+
+  /**
    * Constructs a new color object.
    *
    * @param red the value for the additive primary color {@code red}
@@ -236,7 +241,7 @@ public enum Nord {
    * @return the ArcVer version string
    * @see <a href="http://semver.org">SemVer</a>
    */
-  public String getVersion() {
-    return "0.1.0";
+  public static String getVersion() {
+    return VERSION;
   }
 }
