@@ -60,7 +60,7 @@ import java.util.regex.Pattern;
  * </div>
  *
  * @author Arctic Ice Studio &lt;development@arcticicestudio.com&gt;
- * @version 0.1.0
+ * @version 0.2.0
  * @since 0.1.0
  */
 public enum Nord {
@@ -204,7 +204,7 @@ public enum Nord {
   /**
    * The <a href="https://github.com/arcticicestudio/arcver">ArcVer</a> version of the public API.
    */
-  private static final String VERSION = "0.1.0";
+  private static final String VERSION = "0.2.0";
 
   /**
    * Constructs a new color object.

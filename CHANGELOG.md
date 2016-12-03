@@ -4,6 +4,36 @@
 
 ---
 
+# 0.2.0 (2016-12-03)
+## Improvements
+### Public API
+The public API method `getVersion() : String` is now static and returns the `String` constant `VERSION` to adapt to the SonarQube minor rule [squid:S3400](https://sonarqube.com/coding_rules#q=squid%3AS3400).
+The associated unit test has been refactored to test against the [ArcVer](https://github.com/arcticicestudio/arcver) library [arcver-java](https://github.com/arcticicestudio/arcver). (@arcticicestudio, #8, 7efc44cc)
+
+The attribute
+```java
+private final Color COLOR;
+```
+conflicted with the SonarQube rule [squid:S00116](https://sonarqube.com/coding_rules#q=squid%3AS00116) and has been adapted to the Arctic Ice Studio Java code style. (@arcticicestudio, #9, 8eb03e63)
+
+### Toolbox
+Fixed the deprecated POM variable `${inceptionYear}` and replaced it with `${project.inceptionYear}`. (@arcticicestudio, #3, 1a02e6d2)
+
+Added POM profiles for [JFrog Bintray](https://bintray.com) to deploy Maven artifacts to the [jCenter](https://bintray.com/bintray/jcenter) and snapshots to the [OSS JFrog](https://oss.jfrog.org) repository. (@arcticicestudio, #4, f74c7a57)
+
+### Public API Documentation
+Adapted the documentation style of the Nord color palette project to the JavaDoc. (@arcticicestudio, #7, 9eab5800)
+
+## Bug Fixes
+### Public API Documentation
+Fixed malformed JavaDoc to prevent compilation errors caused by the new JavaDoc linter rules introduced JDK 8u92 by adding the `summary` attribute to `table` tags. (@arcticicestudio, #3, 1a02e6d2)
+
+## Tasks
+### Toolbox
+Created a `circle.yml` configuration file to add [Circle CI](https://circleci.com) build integration. (@arcticicestudio, #6, f241e8de)
+
+Added the `maven-assembly-plugin` as `assemble` POM profile (@arcticicestudio, #5, 9f6e438d)
+
 # 0.1.0 (2016-09-26)
 ## Features
 Implemented the public API (@arcticicestudio, #1, 8949a9baa7adf73be66b7ac8e15dfa2b57b0ac92)  
