@@ -15,7 +15,7 @@ import javafx.scene.paint.Color;
 import java.util.regex.Pattern;
 
 /**
- * A arctic, north-bluish color palette Java library.
+ * An arctic, north-bluish color palette Java library.
  * Created for the clean- and minimal flat design pattern to achieve a optimal focus and readability for code syntax
  * highlighting and UI.
  * It consists of a total of sixteen, carefully selected, dimmed pastel colors for a eye-comfortable, but yet colorful

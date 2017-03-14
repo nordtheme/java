@@ -31,7 +31,7 @@ JFrog
   <packaging>jar</packaging>
 
   <name>nord-java</name>
-  <description>A arctic, north-bluish color palette Java library.</description>
+  <description>An arctic, north-bluish color palette Java library.</description>
   <url>https://github.com/arcticicestudio/nord-java</url>
   <inceptionYear>2016</inceptionYear>
   <organization>
