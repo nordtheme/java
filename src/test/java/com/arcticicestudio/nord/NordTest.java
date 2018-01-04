@@ -1,13 +1,14 @@
 /*
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-title      Nord API Unit Test                           +
-project    nord-java                                    +
-repository https://github.com/arcticicestudio/nord-java +
-author     Arctic Ice Studio                            +
-email      development@arcticicestudio.com              +
-copyright  Copyright (C) 2016                           +
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-*/
+ * Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+ * Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+ *
+ * Nord API unit tests.
+ *
+ * Project:    Nord Java
+ * Repository: https://github.com/arcticicestudio/nord-java
+ * License:    MIT
+ */
+
 package com.arcticicestudio.nord;
 
 import com.arcticicestudio.arcver.Version;
