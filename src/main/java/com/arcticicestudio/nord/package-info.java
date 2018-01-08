@@ -1,13 +1,12 @@
 /*
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-title      Nord API Package Info                        +
-project    nord-java                                    +
-repository https://github.com/arcticicestudio/nord-java +
-author     Arctic Ice Studio                            +
-email      development@arcticicestudio.com              +
-copyright  Copyright (C) 2016                           +
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-*/
+ * Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+ * Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+ *
+ * Project:    Nord Java
+ * Repository: https://github.com/arcticicestudio/nord-java
+ * License:    MIT
+ */
+
 /**
  * Public API of the <a href="https://github.com/arcticicestudio/nord-java">Nord Java</a> project, which implements
  * the <a href="https://github.com/arcticicestudio/nord">Nord</a> color palette.
