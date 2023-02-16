@@ -1,29 +1,25 @@
 /*
- * Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
- * Copyright (c) 2016-present Sven Greb <code@svengreb.de>
- *
- * Nord API.
- *
- * Project:    Nord Java
- * Repository: https://github.com/arcticicestudio/nord-java
- * License:    MIT
+ * Copyright (c) 2016-present Sven Greb <development@svengreb.de>
+ * This source code is licensed under the MIT license found in the license file.
  */
 
-package com.arcticicestudio.nord;
+/*
+ * Nord API.
+ */
+
+package com.nordtheme.nord;
 
 import javafx.scene.paint.Color;
 
 import java.util.regex.Pattern;
 
 /**
- * A arctic, north-bluish color palette Java library.
- * Created for the clean- and minimal flat design pattern to achieve a optimal focus and readability for code syntax
- * highlighting and UI.
- * It consists of a total of sixteen, carefully selected, dimmed pastel colors for a eye-comfortable, but yet colorful
- * ambiance.
+ * Official Java implementation of Nord — An arctic, north-bluish color palette.
+ * Created for the clean and uncluttered design pattern to achieve a optimal focus and readability for code syntax highlighting and UI components.
+ * Nord colors are numbered from {@code nord0} to {@code nord15} where each component contains a different amount of colors.
  * <p>
- *   Public API entry point of the <a href="https://github.com/arcticicestudio/nord-java">Nord Java</a> project, which
- *   implements the <a href="https://github.com/arcticicestudio/nord">Nord</a> color palette.
+ *   Public API entry point of the <a href="https://github.com/nordtheme/java">Nord Java</a> project, which
+ *   implements the <a href="https://github.com/nordtheme/nord">Nord</a> color palette.
  *
  * <div>
  *   <table summary="Nord Color Palette">
@@ -60,7 +56,7 @@ import java.util.regex.Pattern;
  *   </table>
  * </div>
  *
- * @author Arctic Ice Studio &lt;development@arcticicestudio.com&gt;
+ * @author Sven Greb &lt;development@svengreb.de&gt;
  * @version 0.2.0
  * @since 0.1.0
  */
@@ -203,7 +199,7 @@ public enum Nord {
   private final Color color;
 
   /**
-   * The <a href="https://github.com/arcticicestudio/arcver">ArcVer</a> version of the public API.
+   * The <a href="https://semver.org">SemVer</a> version of the public API.
    */
   private static final String VERSION = "0.2.0";
 
@@ -257,10 +253,10 @@ public enum Nord {
   }
 
   /**
-   * Returns the <a href="https://github.com/arcticicestudio/arcver">ArcVer</a> version of the public API.
+   * Returns the <a href="https://semver.org">SemVer</a> version of the public API.
    *
-   * @return the ArcVer version string
-   * @see <a href="http://semver.org">SemVer</a>
+   * @return the SemVer version string
+   * @see <a href="https://semver.org">SemVer</a>
    */
   public static String getVersion() {
     return VERSION;

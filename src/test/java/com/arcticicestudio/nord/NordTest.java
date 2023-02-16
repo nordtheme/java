@@ -1,17 +1,14 @@
 /*
- * Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
- * Copyright (c) 2016-present Sven Greb <code@svengreb.de>
- *
- * Nord API unit tests.
- *
- * Project:    Nord Java
- * Repository: https://github.com/arcticicestudio/nord-java
- * License:    MIT
+ * Copyright (c) 2016-present Sven Greb <development@svengreb.de>
+ * This source code is licensed under the MIT license found in the license file.
  */
 
-package com.arcticicestudio.nord;
+/*
+ * Nord API unit tests.
+ */
 
-import com.arcticicestudio.arcver.Version;
+package com.nordtheme.nord;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -20,7 +17,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Unit tests for the {@link Nord} public API.
  *
- * @author Arctic Ice Studio &lt;development@arcticicestudio.com&gt;
+ * @author Sven Greb &lt;development@svengreb.de&gt;
  * @since 0.1.0
  */
 public class NordTest {
@@ -63,10 +60,5 @@ public class NordTest {
     assertEquals(Nord.rgb(Nord.NORD13.get()), "rgb(235, 203, 139)");
     assertEquals(Nord.rgb(Nord.NORD14.get()), "rgb(163, 190, 140)");
     assertEquals(Nord.rgb(Nord.NORD15.get()), "rgb(180, 142, 173)");
-  }
-
-  @Test
-  public void shouldReturnTheCorrectVersionString() {
-    assertTrue(Version.valueOf(Nord.getVersion()).satisfies("0.2.0"));
   }
 }
