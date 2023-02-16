@@ -1,81 +1,45 @@
-<p align="center"><img src="https://cdn.rawgit.com/arcticicestudio/nord-java/develop/src/main/assets/nord-java-banner.svg"/></p>
+<p align="center">
+  <a href="https://www.nordtheme.com" target="_blank">
+    <picture>
+      <source srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/logos/heroes/logo-typography/dark/frostic/nord3/spaced.svg?sanitize=true" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+      <source srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/logos/heroes/logo-typography/light/frostic/nord6/spaced.svg?sanitize=true" width="100%" media="(prefers-color-scheme: dark)" />
+      <img src="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/logos/heroes/logo-typography/dark/frostic/nord3/spaced.svg?sanitize=true" width="100%" />
+    </picture>
+  </a>
+</p>
 
-<p align="center"><img src="https://cdn.travis-ci.org/images/favicon-c566132d45ab1a9bcae64d8d90e4378a.svg" width=24 height=24/> <a href="https://travis-ci.org/arcticicestudio/nord-java"><img src="https://img.shields.io/travis/arcticicestudio/nord-java/develop.svg"/></a> <img src="https://circleci.com/favicon.ico" width=24 height=24/> <a href="https://circleci.com/gh/arcticicestudio/nord-java"><img src="https://circleci.com/gh/arcticicestudio/nord-java.svg?style=shield&circle-token=d2d78e04b95f505e0c6a870913f96ee9912bb4c0"/></a> <img src="https://codecov.io/favicon.ico" width=24 height=24/> <a href="https://codecov.io/gh/arcticicestudio/nord-java"><img src="https://codecov.io/gh/arcticicestudio/nord-java/branch/develop/graph/badge.svg"/></a> <img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> <a href="https://github.com/arcticicestudio/nord-java/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-java.svg"/></a> <a href="https://github.com/arcticicestudio/nord-java/releases/latest"><img src="https://img.shields.io/badge/pre--release---_-blue.svg"/></a> <a href="https://github.com/arcticicestudio/nord/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/Nord-0.2.0-blue.svg"/></a> <img src="http://central.sonatype.org/favicon.ico" width=24 height=24/> <a href="http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.arcticicestudio%22%20AND%20a%3A%22nord-java%22"><img src="https://img.shields.io/maven-central/v/com.arcticicestudio/nord-java.svg"/></a> <img src="https://oss.sonatype.org/favicon.ico"/> <a href="https://oss.sonatype.org/content/repositories/snapshots/com/arcticicestudio/nord-java"><img src="https://img.shields.io/badge/snapshot---_-blue.svg"/></a> <img src="https://bintray.com/favicon.ico" width=24 height=24/> <a href='https://bintray.com/arcticicestudio/Nord/nord-java/_latestVersion'><img src='https://api.bintray.com/packages/arcticicestudio/Nord/nord-java/images/download.svg'></a> <img src="https://oss.jfrog.org/webapp/images/favicon.40285.ico" width=24 height=24/> <a href="https://oss.jfrog.org/webapp/#/artifacts/browse/tree/General/oss-snapshot-local/com/arcticicestudio/nord-java"><img src="https://img.shields.io/badge/artifactory---_-green.svg"/></a></p>
+<p align="center">
+  <a href="https://github.com/nordtheme/java/releases/latest" target="_blank">
+    <img src="https://img.shields.io/github/release/nordtheme/assets.svg?style=flat-square&label=Release&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0" />
+  </a>
+  <a href="https://github.com/nordtheme/java/blob/main/changelog.md" target="_blank">
+    <img src="https://img.shields.io/github/release/nordtheme/assets.svg?style=flat-square&label=Changelog&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0" />
+  </a>
+</p>
 
-<p align="center">A arctic, north-bluish color palette Java library.<br>
-Implementation of the <a href="https://github.com/arcticicestudio/nord">Nord</a> project.</p>
+<p align="center">
+  Official <a href="https://www.java.com" target="_blank" rel="noreferrer">Java</a> implementation of <a href="https://www.nordtheme.com" target="_blank">Nord</a> — An arctic, north-bluish color palette.
+</p>
 
----
+This repository is currently in a transitioning phase and work in progress!
 
-## Getting started
-### Setup
-To use nord-java, it must be available on your classpath.  
-You can get it from the <img src="http://central.sonatype.org/favicon.ico" width=16 height=16/> <a href="https://search.maven.org">Central Repository</a> as a dependency for your favorite build tool or [download the latest version](https://github.com/arcticicestudio/nord-java/releases/latest).
+<p align="center">
+  <picture>
+    <source srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/dark/spaced.svg?sanitize=true" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+    <source srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/light/spaced.svg?sanitize=true" width="100%" media="(prefers-color-scheme: dark)" />
+    <img src="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/dark/spaced.svg?sanitize=true" width="100%" />
+  </picture>
+</p>
 
-<img src="http://apache.org/favicons/favicon.ico" width=16 height=16/> <a href="https://maven.apache.org">Apache Maven</a>
-```xml
-<dependency>
-  <groupId>com.arcticicestudio</groupId>
-  <artifactId>nord-java</artifactId>
-  <version>0.2.0</version>
-</dependency>
-```
+<p align="center">
+  Copyright &copy; 2016-present <a href="https://www.svengreb.de" target="_blank">Sven Greb</a>
+</p>
 
-<img src="https://gradle.org/wp-content/uploads/fbrfg/favicon.ico" width=16 height=16/> <a href="https://gradle.org">Gradle</a>
-```java
-compile(group: 'com.arcticicestudio', name: 'nord-java', version: '0.2.0')
-```
-
-<img src="http://apache.org/favicons/favicon.ico" width=16 height=16/> <a href="https://ant.apache.org/ivy">Apache Ivy</a>
-```xml
-<dependency org="com.arcticicestudio" name="nord-java" rev="0.2.0" />
-```
-
-Development snapshots are available via [OSS Sonatype](https://oss.sonatype.org/content/repositories/snapshots/com/arcticicestudio/nord-java) and [JFrog Artifactory](https://oss.jfrog.org/webapp/#/artifacts/browse/tree/General/oss-snapshot-local/com/arcticicestudio/nord-java).
-
-### Build
-Build and install nord-java into your local repository without GPG signing:  
-```
-mvn clean install
-```
-
-Signed artifacts may be build by using the `sign-gpg` profile with a provided `gpg.keyname` property:
-```
-mvn clean install -Dgpg.keyname=YourGPGKeyId
-```
-
-Continuous integration builds are running at [Travis-CI](https://travis-ci.org/arcticicestudio/nord-java) and [Circle CI](https://circleci.com/bb/arcticicestudio/nord-java).
-
-## Usage Guide
-This is a basic guide to show the common usage of the nord-java API.  
-The API documentation can be found in the JavaDoc.
-
-The class `Nord` is the entrypoint to the nord-java API, use it to generate the HEX and RGB color codes.
-  1. [Generate color code strings](#generate-color-code-strings)
-  2. [Obtaining the Public API version](#obtaining-the-public-api-version)
-
-### Generate color code strings
-Color code strings can be generated from all `Nord` enum constants by using the static methods `hex(Color)` and `rgb(Color)`.  
-The `Color` object can be obtained from a `Nord` enum variable via the `get()` method.  
-```java
-String hex = Nord.hex(Nord.NORD0.get()); // "#2E3440"
-String rgb = Nord.rgb(Nord.NORD8.get()); // "rgb(136, 192, 208)"
-```
-
-### Obtaining the Public API version
-The `getVersion()` method returns the [ArcVer](https://github.com/arcticicestudio/arcver) version of the public API.
-```java
-String version = Nord.getVersion(); // "0.2.0"
-```
-
-## Development
-[![](https://img.shields.io/badge/Changelog-0.2.0-blue.svg)](https://github.com/arcticicestudio/nord-java/blob/v0.2.0/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow_Branching_Model-blue.svg)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-blue.svg)](https://github.com/arcticicestudio/arcver)
-
-### Contribution
-Please report issues/bugs, feature requests and suggestions for improvements to the [issue tracker](https://github.com/arcticicestudio/nord-java/issues).
-
-<p align="center"><img src="https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/banner-footer-mountains.svg"/></p>
-
-<p align="center">Copyright &copy; 2016-present Arctic Ice Studio</p>
-
-<p align="center"><a href="https://github.com/arcticicestudio/nord-java/blob/develop/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-5E81AC.svg?style=flat-square"/></a> <a href="https://creativecommons.org/licenses/by-sa/4.0"><img src="https://img.shields.io/badge/License-CC_BY--SA_4.0-5E81AC.svg?style=flat-square"/></a></p>
+<p align="center">
+  <a href="https://github.com/nordtheme/java/blob/main/license" target="_blank">
+    <img src="https://img.shields.io/static/v1.svg?style=flat-square&label=License&message=MIT&logoColor=eceff4&logo=creativecommons&colorA=4c566a&colorB=88c0d0"/>
+  </a>
+  <a href="https://www.svengreb.de">
+    <img src="https://img.shields.io/static/v1.svg?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABMklEQVQ4jcWQvUoDQRRGz52s5IfVIiDWPkGKFFaCIVaGdIagjcFAwICFb7DvIK6QQlNpY2UQLMQVBbEQ0SewFkGbKCQmOzaTJay7/lR+zTAf9xwuF/47Mv45rdezqWEq72v/RWZnHgqOMwDwHMfSj085JSqb6Pu38we7r18E3nqzhmYbsE11rxKsAvhDfQiSM30XYbOw57YDwfnaRl6U3ABWaMNn806H+oGPzBX3d+4UgChZiYBHYBgGsBLoKoAyhR0x9G20Zmpc4P1ZoMQDcwMNclFrdhBKv6M5WWi7ZQGtjEUn35IV4OwnVjSX/WGmKqCDDUa5rmyle3bvGFiMg3WGUsF1u0EXHoqTRMGRgkAy2eugKZrqijRLYThWANBpNDL2h3UE0J0YLJdbrfe42f/NJ0wqY7/KcXKPAAAAAElFTkSuQmCC&label=lovely%20crafted%20in&message=Germany&colorA=4c566a&colorB=88c0d0"/>
+  </a>
+</p>
